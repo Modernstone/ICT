@@ -1,54 +1,171 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Tachiyomi - Full-featured reader</title>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Tachiyomi
+  </title>
   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="header">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="container">
+   <header class="header">
     <div class="logo">
-      <img src="logo.png" alt="Logo">
-      <h1>Tachiyomi</h1>
+     <i class="fas fa-book">
+     </i>
+     <span>
+      Tachiyomi
+     </span>
     </div>
-    <div class="search">
-      <input type="search" placeholder="Search...">
-      <button>Search</button>
-    </div>
-  </header>
-  <main class="hero">
+    <nav class="nav">
+     <div class="search">
+      <i class="fas fa-search">
+      </i>
+      <input placeholder="Search" type="text"/>
+     </div>
+     <a href="#">
+      Docs
+     </a>
+     <a href="#">
+      News
+     </a>
+     <a href="#">
+      <i class="fas fa-moon">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fas fa-sun">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fas fa-github">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fas fa-twitter">
+      </i>
+     </a>
+     <a href="#">
+      <i class="fas fa-facebook">
+      </i>
+     </a>
+    </nav>
+   </header>
+   <main class="main">
     <div class="text">
-      <h1>Full-featured reader</h1>
-      <p>Tachiyomi is a free and open-source manga reader for Android.</p>
+     <h1>
+      Tachiyomi
+     </h1>
+     <h2>
+      Full-featured reader
+     </h2>
+     <p>
+      Discover and read manga, webtoons, comics, and more – easier than ever on your Android device.
+     </p>
+     <a class="btn" href="#">
+      Get started
+     </a>
     </div>
-    <div class="image"> 
-      <img src="image/book.webp" alt="Book">
+    <div class="image">
+        <img src="image/book.webp" alt="Book">
     </div>
-  </main>
-  <section class="features">
+   </main>
+   <section class="features">
     <div class="feature">
-      <h2>Customizable</h2>
-      <p>Customize the reader to your liking with various themes and settings.</p>
+     <i class="fas fa-bolt">
+     </i>
+     <h3>
+      Tracking
+     </h3>
+     <p>
+      Automatically keep track of your series with MyAnimeList, AniList, Kitsu, and more.
+     </p>
+     <a href="#">
+      Setup tracking →
+     </a>
     </div>
     <div class="feature">
-      <h2>Offline reading</h2>
-      <p>Download manga for offline reading, perfect for commutes or travel.</p>
+     <i class="fas fa-puzzle-piece">
+     </i>
+     <h3>
+      Extensions
+     </h3>
+     <p>
+      Bring your own content from a variety of sources.
+     </p>
+     <a href="#">
+      Find extensions →
+     </a>
     </div>
     <div class="feature">
-      <h2>Multi-source</h2>
-      <p>Read manga from various sources, including online archives and local files.</p>
+     <i class="fas fa-cogs">
+     </i>
+     <h3>
+      Customization
+     </h3>
+     <p>
+      Make it yours with multiple reading modes, custom color filters, and many other settings.
+     </p>
+     <a href="#">
+      Get started →
+     </a>
     </div>
     <div class="feature">
-      <h2>New feature 1</h2>
-      <p>Description of new feature 1.</p>
+     <i class="fas fa-book">
+     </i>
+     <h3>
+      Library
+     </h3>
+     <p>
+      Organize your manga collection with ease.
+     </p>
+     <a href="#">
+      Manage library →
+     </a>
     </div>
     <div class="feature">
-      <h2>New feature 2</h2>
-      <p>Description of new feature 2.</p>
+     <i class="fas fa-sync-alt">
+     </i>
+     <h3>
+      Sync
+     </h3>
+     <p>
+      Sync your reading progress across devices.
+     </p>
+     <a href="#">
+      Setup sync →
+     </a>
     </div>
     <div class="feature">
-      <h2>New feature 3</h2>
-      <p>Description of new feature 3.</p>
+     <i class="fas fa-cloud-download-alt">
+     </i>
+     <h3>
+      Offline Reading
+     </h3>
+     <p>
+      Download manga to read offline.
+     </p>
+     <a href="#">
+      Learn more →
+     </a>
     </div>
-  </section>
-</body>
+   </section>
+   <footer class="footer">
+    <a href="#">
+     Open-source Apache Licensed
+    </a>
+    <a href="#">
+     Privacy policy
+    </a>
+    <a href="#">
+     Powered by Netlify
+    </a>
+    <p>
+     Copyright © 2015 - 2024 Javier Tomás
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

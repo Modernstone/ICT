@@ -1,96 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICT Semester Boxes</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Tachiyomi - Full-featured reader</title>
+  <style>
+    body {
+      background-color: #181818;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    .header .logo {
+      display: flex;
+      align-items: center;
+    }
+    .header .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    .header .search {
+      margin-left: 20px;
+    }
+    .header .search input {
+      background-color: #282828;
+      border: none;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .header .search button {
+      background-color: #282828;
+      border: none;
+      color: #fff;
+      padding: 10px;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .hero .text {
+      margin-right: 50px;
+    }
+    .hero .text h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero .text p {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+    .hero .image {
+      width: 300px;
+      height: 400px;
+    }
+    .hero .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .features .feature {
+      background-color: #282828;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      width: calc(33.33% - 40px);
+    }
+    .features .feature h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .features .feature p {
+      font-size:  1.2em;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="dropdown">
-            <button class="dropbtn">Select Semester</button>
-            <div class="dropdown-content">
-                <a href="#" onclick="showSemester('sem1')">Semester 1</a>
-                <a href="#" onclick="showSemester('sem2')">Semester 2</a>
-                <a href="#" onclick="showSemester('sem3')">Semester 3</a>
-                <a href="#" onclick="showSemester('sem4')">Semester 4</a>
-                <a href="#" onclick="showSemester('sem5')">Semester 5</a>
-                <a href="#" onclick="showSemester('sem6')">Semester 6</a>
-                <a href="#" onclick="showSemester('sem7')">Semester 7</a>
-                <a href="#" onclick="showSemester('sem8')">Semester 8</a>
-            </div>
-        </div>
-        <h1>ICT</h1>
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      <h1>Tachiyomi</h1>
     </div>
-    
-    <div class="container">
-        <div class="semester" id="sem1">
-            <div class="box">DBMS</div>
-            <div class="box">OOP</div>
-            <div class="box">DS</div>
-            <div class="box">Entrepreneurship</div>
-            <div class="box">Maths</div>
-            <div class="box">Books</div>
-        </div>
-        <div class="semester" id="sem2">
-            <div class="box">DBMS</div>
-            <div class="box">OOP</div>
-            <div class="box">DS</div>
-            <div class="box">Entrepreneurship</div>
-            <div class="box">Maths</div>
-            <div class="box">Books</div>
-        </div>
-        <div class="semester" id="sem3">
-            <div class="box">DBMS</div>
-            <div class="box">OOP</div>
-            <div class="box">DS</div>
-            <div class="box">Entrepreneurship</div>
-            <div class="box">Maths</div>
-            <div class="box">Books</div>
-        </div>
-        <div class="semester" id="sem4">
-            <div class="box">DBMS</div>
-            <div class="box">OOP</div>
-            <div class="box">DS</div>
-            <div class="box">Entrepreneurship</div>
-            <div class="box">Maths</div>
-            <div class="box">Books</div>
-        </div>
-        <div class="semester" id="sem5">
-            <div class="box">DBMS</div>
-            <div class="box">OOP</div>
-            <div class="box">DS</div>
-            <div class="box">Entrepreneurship</div>
-            <div class="box">Maths</div>
-            <div class="box">Books</div>
-        </div>
-        <div class="semester" id="sem6">
-            <div class="box">DBMS</div>
-            <div class="box">OOP</div>
-            <div class="box">DS</div>
-            <div class="box">Entrepreneurship</div>
-            <div class="box">Maths</div>
-            <div class="box">Books</div>
-        </div>
-        <div class="semester" id="sem7">
-            <div class="box">DBMS</div>
-            <div class="box"> OOP</div>
-            <div class="box">DS</div>
-            <div class="box">Entrepreneurship</div>
-            <div class="box">Maths</div>
-            <div class="box">Books</div>
-        </div>
-        <div class="semester" id="sem8">
-            <div class="box">DBMS</div>
-            <div class="box">OOP</div>
-            <div class="box">DS</div>
-            <div class="box">Entrepreneurship</div>
-            <div class="box">Maths</div>
-            <div class="box">Books</div>
-        </div>
+    <div class="search">
+      <input type="search" placeholder="Search...">
+      <button>Search</button>
     </div>
-    
-    <script src="script.js"></script>
+  </header>
+  <main class="hero">
+    <div class="text">
+      <h1>Full-featured reader</h1>
+      <p>Tachiyomi is a free and open-source manga reader for Android.</p>
+    </div>
+    <div class="image">
+      <img src="book.png" alt="Book">
+    </div>
+  </main>
+  <section class="features">
+    <div class="feature">
+      <h2>Customizable</h2>
+      <p>Customize the reader to your liking with various themes and settings.</p>
+    </div>
+    <div class="feature">
+      <h2>Offline reading</h2>
+      <p>Download manga for offline reading, perfect for commutes or travel.</p>
+    </div>
+    <div class="feature">
+      <h2>Multi-source</h2>
+      <p>Read manga from various sources, including online archives and local files.</p>
+    </div>
+    <div class="feature">
+      <h2>New feature 1</h2>
+      <p>Description of new feature 1.</p>
+    </div>
+    <div class="feature">
+      <h2>New feature 2</h2>
+      <p>Description of new feature 2.</p>
+    </div>
+    <div class="feature">
+      <h2>New feature 3</h2>
+      <p>Description of new feature 3.</p>
+    </div>
+  </section>
 </body>
 </html>
